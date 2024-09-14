@@ -1,0 +1,6 @@
+.text-stroke {
+    font-size: 1.5rem;
+    color: rgb(199, 199, 255);
+    -webkit-text-stroke: 1px blue;
+  }
+  
