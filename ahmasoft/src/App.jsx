@@ -1,31 +1,17 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './Components/Navbar/Navbar'
-import Landingpage from './Components/LandingPage/Landingpage'
-import Companybenefits from './Components/CompanyBenefits/Companybenefits.jsx'
-import CompletedProjects from './Components/CompletedProjects/CompletedProjects.jsx'
-import WhyUs from './Components/WhyUS/WhyUs.jsx'
-import Ouroffering from './Components/Ouroffering/Ouroffering.jsx'
-import Bestsol from './Components/Bestsol/Bestsol.jsx'
-import TrustedSolution from './Components/TrustedSolution/TrustedSolution.jsx'
+import Navbar from './Components/Fixcomponents/Navbar/Navbar.jsx'
+import Footer from './Components/Fixcomponents/Footer/Footer.jsx'
+import { Outlet } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <div className='flex flex-col gap-16'>
+      <div className='flex flex-col'>
         <Navbar />
-        <Landingpage />
-        <Companybenefits />
-        <CompletedProjects />
-        <WhyUs />
-        <Ouroffering />
-      </div>
-      <div>
-        <Bestsol />
-      </div>
-      <div className='flex flex-col gap-16'>
-      <TrustedSolution />
+        <Outlet />
+        <Footer />
       </div>
     </>
   )
