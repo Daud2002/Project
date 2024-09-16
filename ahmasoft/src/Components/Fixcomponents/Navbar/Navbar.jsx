@@ -3,7 +3,7 @@ import { nav_items } from '../../../assets/Data/Data';
 import { RiWhatsappFill } from "react-icons/ri";
 import './Navbar.css'
 import { NavLink } from 'react-router-dom'
-import logo from '../../../assets/Images/logos.jpg'
+import logo from '../../../assets/Images/logo.jpg'
 
 export default function Navbar() {
     return (

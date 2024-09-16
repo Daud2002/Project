@@ -24,8 +24,8 @@ export default function Landingpage() {
                     <div className='flex flex-col gap-6'>
                         <header className='text-primary font-semibold text-[2rem]'>Welcome to Ahma Soft</header>
                         <h1 className='flex flex-col font-semibold text-[2.5rem]'>
-                            <span>Your Trust</span>
-                            <span>Our Responsibility</span>
+                            <span className=' opacity-65'>Your Trust</span>
+                            <span className=' opacity-65'>Our Responsibility</span>
                         </h1>
                         <button className='border-[2px] border-primary py-3 text-primary font-bold hover:bg-primary hover:text-white rounded duration-200 backdrop-blur-sm'>Book free consultation</button>
                     </div>

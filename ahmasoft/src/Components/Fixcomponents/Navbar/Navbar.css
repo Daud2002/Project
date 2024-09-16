@@ -4,7 +4,7 @@
     -webkit-text-stroke: 1px blue;
   }
 .active{
-  color: #b882fc;
-  border-bottom: 3px solid #b882fc;
+  color: #29abe2;
+  border-bottom: 3px solid #29abe2;
   border-radius: 10%;
 }
