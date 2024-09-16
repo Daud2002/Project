@@ -22,7 +22,7 @@ export default function Landingpage() {
                         <FaLinkedin className='w-8 h-8' />
                     </div>
                     <div className='flex flex-col gap-6'>
-                        <header className='text-primary font-semibold text-[2rem]'>Welcome to Ahma Soft</header>
+                        <header className='text-primary font-semibold text-[2rem]'>Welcome to Ahmasoft</header>
                         <h1 className='flex flex-col font-semibold text-[2.5rem]'>
                             <span className=' opacity-65'>Your Trust</span>
                             <span className=' opacity-65'>Our Responsibility</span>
