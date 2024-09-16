@@ -3,11 +3,11 @@ import { nav_items } from '../../../assets/Data/Data';
 import { RiWhatsappFill } from "react-icons/ri";
 import './Navbar.css'
 import { NavLink } from 'react-router-dom'
-import logo from '../../../assets/Images/logo.png'
+import logo from '../../../assets/Images/logos.jpg'
 
 export default function Navbar() {
     return (
-        <nav className='flex flex-row justify-around py-2 sticky top-0 w-full z-30 bg-gray-300'>
+        <nav className='flex flex-row justify-around py-2 sticky top-0 w-full z-30 bg-white'>
             <div className='flex items-center gap-1'>
                 {/* <span className='font-bold text-stroke'>Ahma</span>
                 <span className='rounded bg-primary text-white px-4 py-0.5 tracking-widest font-bold text-[1.3rem]'>Soft</span> */}
