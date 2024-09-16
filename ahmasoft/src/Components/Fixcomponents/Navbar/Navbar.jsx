@@ -7,7 +7,7 @@ import logo from '../../../assets/Images/logo.png'
 
 export default function Navbar() {
     return (
-        <nav className='flex flex-row justify-around py-2 sticky top-0 w-full z-30 bg-white'>
+        <nav className='flex flex-row justify-around py-2 sticky top-0 w-full z-30 bg-gray-300'>
             <div className='flex items-center gap-1'>
                 {/* <span className='font-bold text-stroke'>Ahma</span>
                 <span className='rounded bg-primary text-white px-4 py-0.5 tracking-widest font-bold text-[1.3rem]'>Soft</span> */}
