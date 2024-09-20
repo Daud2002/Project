@@ -14,22 +14,26 @@ import { nav_items } from '../../../assets/Data/Data';
 export default function Footer() {
   return (
     <div>
-      <div className='bg-footer-img h-[50vh] flex flex-row justify-between pt-8'>
+      <div className='bg-footer-img flex md:flex-row flex-col md:justify-between justify-center pt-8 md:gap-0 gap-12 pb-10'>
 
-        <div className='w-[30%] flex flex-col gap-6 pl-4 pr-20'>
+        <div className='md:w-[30%] w-full flex flex-col items-center text-center gap-6 px-6 md:pl-4 md:pr-20'>
           <h1 className='text-white text-[2rem] font-semibold relative'>Ahmasoft
-          <div className='absolute bottom-0 w-10 h-0.5 bg-primary rounded' />
+            <div className='absolute bottom-0 w-10 h-0.5 bg-primary rounded' />
           </h1>
           <p className='text-justify text-[0.9rem]'>We thrive on transforming data into opportunities, pushing boundaries in data solutions and automation.</p>
-          <div className='flex gap-8'>
-            <a href=""><FaLinkedinIn className='border-[1px] p-4 box-content rounded-[20%] h-4 w-4 bg-[#15101e] text-white hover:scale-110 duration-150 hover:bg-primary' /></a>
-            <a href=""><FaTwitter className='border-[1px] p-4 box-content rounded-[20%] h-4 w-4 bg-[#15101e] text-white hover:scale-110 duration-150 hover:bg-primary' /></a>
-            <a href=""><GrFacebookOption className='border-[1px] p-4 box-content rounded-[20%] h-4 w-4 bg-[#15101e] text-white hover:scale-110 duration-150 hover:bg-primary' /></a>
-            <a href=""><FaInstagram className='border-[1px] p-4 box-content rounded-[20%] h-4 w-4 bg-[#15101e] text-white hover:scale-110 duration-150 hover:bg-primary' /></a>
+          <div className='flex lg:flex-row flex-col gap-4'>
+            <div className='flex gap-4'>
+              <a href=""><FaLinkedinIn className='border-[1px] p-4 box-content rounded-[20%] h-4 w-4 bg-[#15101e] text-white hover:scale-110 duration-150 hover:bg-primary' /></a>
+              <a href=""><FaTwitter className='border-[1px] p-4 box-content rounded-[20%] h-4 w-4 bg-[#15101e] text-white hover:scale-110 duration-150 hover:bg-primary' /></a>
+            </div>
+            <div className='flex gap-4'>
+              <a href=""><GrFacebookOption className='border-[1px] p-4 box-content rounded-[20%] h-4 w-4 bg-[#15101e] text-white hover:scale-110 duration-150 hover:bg-primary' /></a>
+              <a href=""><FaInstagram className='border-[1px] p-4 box-content rounded-[20%] h-4 w-4 bg-[#15101e] text-white hover:scale-110 duration-150 hover:bg-primary' /></a>
+            </div>
           </div>
         </div>
 
-        <div className='w-[10%] flex flex-col gap-6'>
+        <div className='md:w-[10%] w-full flex flex-col items-center md:items-start gap-6'>
           <h3 className='text-white font-semibold text-[1.7rem] relative'>Links
             <div className='absolute bottom-0 w-10 h-0.5 bg-primary rounded' />
           </h3>
@@ -37,7 +41,7 @@ export default function Footer() {
             {
               nav_items.slice(1).map((items, i) => {
                 return (
-                  <p className='hover:text-primary text-[0.9rem]'>
+                  <p className='hover:text-primary text-[0.9rem]' key={i}>
                     {items.name}
                   </p>
                 )
@@ -46,35 +50,35 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className='w-[30%] flex flex-col gap-8 pr-6'>
+        <div className='md:w-[30%] w-full flex flex-col items-center md:items-start gap-8 pr-6'>
           <h3 className='text-white text-[1.7rem] font-semibold relative'>NewsLetter
-          <div className='absolute bottom-0 w-16 h-0.5 bg-primary rounded' />
+            <div className='absolute bottom-0 w-16 h-0.5 bg-primary rounded' />
           </h3>
-          <p>Signup for our latest news & articles. We won’t give you spam mails</p>
+          <p className='text-center'>Signup for our latest news & articles. We won’t give you spam mails</p>
           <div className='flex'>
             <input type="text" className='outline-none py-2 pl-2' />
             <button className='bg-primary px-3'><CiLocationArrow1 className='text-white' /></button>
           </div>
         </div>
 
-        <div className='w-[30%] flex flex-col gap-8'>
+        <div className='md:w-[30%] w-full flex flex-col items-center md:items-start gap-8'>
           <h3 className='text-white font-semibold text-[1.7rem] relative'>Contact
-          <div className='absolute bottom-0 w-14 h-0.5 bg-primary rounded' />
+            <div className='absolute bottom-0 w-14 h-0.5 bg-primary rounded' />
           </h3>
 
 
           <div className='flex flex-col gap-4'>
-            <div className='flex flex-row items-center gap-4'>
+            <div className='flex flex-row items-center justify-between gap-4'>
               <FaPhoneAlt className='w-6 h-6 text-primary' />
               <p className='text-[15px]'>+923047280822</p>
             </div>
 
-            <div className='flex flex-row items-center gap-4'>
+            <div className='flex flex-row items-center justify-between gap-4'>
               <MdEmail className='w-6 h-6 text-primary' />
               <p className='text-[15px]'>expertshayan@gmail.com</p>
             </div>
 
-            <div className='flex flex-row items-center gap-4'>
+            <div className='flex flex-row items-center justify-between gap-4'>
               <FaLocationDot className='w-6 h-6 text-primary' />
               <p className='text-[15px]'>Lahore, Pakistan</p>
             </div>
@@ -84,7 +88,7 @@ export default function Footer() {
       </div>
 
 
-      <div className='bg-[#15101e] text-white flex justify-center py-4'>
+      <div className='bg-[#15101e] text-white flex justify-center py-4 text-center'>
         <h3>© All Copyright 2024 reserved by Ahmasoft</h3>
       </div>
     </div>

@@ -4,7 +4,21 @@
     -webkit-text-stroke: 1px blue;
   }
 .active{
-  color: #29abe2;
-  border-bottom: 3px solid #29abe2;
-  border-radius: 10%;
+  color: #29abe2 !important;
+}
+.burger-lines:nth-child(1){
+  transform: rotate(45deg) translate(0.7em, 0.5em);
+  transition: ease-out 0.5s;
+}
+.burger-lines:nth-child(2){
+  transform: scale(0.1);
+  transition: ease-out 0.5s;
+}
+.burger-lines:nth-child(3){
+  transform: rotate(135deg) translate(-0.5em, 0.4em);
+  transition: ease-out 0.5s;
+}
+.cancel{
+  transform: rotate(0) translate(0);
+  transition : linear 0.5s;
 }

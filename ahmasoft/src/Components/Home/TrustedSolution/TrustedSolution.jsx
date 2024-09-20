@@ -36,31 +36,44 @@ export default function TrustedSolution() {
                     </div>
                 </div> */}
             </div>
-            <div className='mt-20 bg-img flex flex-row items-center p-10 h-[50vh]'>
-                <div className='w-[80%]'>
+            <div className='mt-20 bg-img flex flex-col md:flex-row p-10'>
+                {/* Left Section */}
+                <div className='w-full md:w-[30%] mb-10 md:mb-0 text-center'>
                     <h5 className='text-white'>-- Technology Path</h5>
-                    <h1 className='font-bold text-[2rem]'>Expert Data Solutions & Automation</h1>
+                    <h1 className='font-bold text-[2rem] text-white'>Expert Data Solutions & Automation</h1>
                 </div>
-                <div className='flex flex-row gap-4'>
+
+                {/* Right Section */}
+                <div className='flex flex-col md:flex-row gap-10 md:gap-4 w-full md:w-[70%]'>
+                    {/* First Card */}
                     <div className='flex flex-col items-center text-center'>
-                        <MdOutlineWork className='border-[1px] border-primary p-2 box-content w-8 h-8 rounded-[50%] text-primary bg-white'/>
-                        <h1 className='font-bold text-[1.3rem]'>Experienced</h1>
+                        <MdOutlineWork className='border-[1px] border-primary p-2 box-content w-12 h-12 rounded-full text-primary bg-white' />
+                        <h1 className='font-bold text-[1.3rem] text-white'>Experienced</h1>
                         <p className='text-white mt-4'>Expertise in data scraping, visualization, and automation for precise, reliable results</p>
                     </div>
-                    <hr className='w-1 h-32 bg-white' />
+
+                    {/* Vertical Divider */}
+                    <hr className='hidden md:block w-1 h-32 bg-white' />
+
+                    {/* Second Card */}
                     <div className='flex flex-col items-center text-center'>
-                        <GiChart className='border-[1px] border-primary p-2 box-content w-8 h-8 rounded-[50%] text-primary bg-white'/>
-                        <h1 className='font-bold text-[1.3rem]'>Convenience</h1>
+                        <GiChart className='border-[1px] border-primary p-2 box-content w-12 h-12 rounded-full text-primary bg-white' />
+                        <h1 className='font-bold text-[1.3rem] text-white'>Convenience</h1>
                         <p className='text-white mt-4'>Seamless, user-friendly solutions that simplify your data processes</p>
                     </div>
-                    <hr className='w-1 h-32 bg-white' />
+
+                    {/* Vertical Divider */}
+                    <hr className='hidden md:block w-1 h-32 bg-white' />
+
+                    {/* Third Card */}
                     <div className='flex flex-col items-center text-center'>
-                        <IoIosPeople className='border-[1px] border-primary p-2 box-content w-8 h-8 rounded-[50%] text-primary bg-white'/>
-                        <h1 className='font-bold text-[1.3rem]'>Professional</h1>
+                        <IoIosPeople className='border-[1px] border-primary p-2 box-content w-12 h-12 rounded-full text-primary bg-white' />
+                        <h1 className='font-bold text-[1.3rem] text-white'>Professional</h1>
                         <p className='text-white mt-4'>Committed to quality, timely delivery, and client satisfaction</p>
                     </div>
                 </div>
             </div>
+
         </div>
     )
 }

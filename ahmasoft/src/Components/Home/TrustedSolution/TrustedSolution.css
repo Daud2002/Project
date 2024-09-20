@@ -1,8 +1,7 @@
 .bg-img{
-    display: block;
     background-image: url(../../../assets/Images/technology-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70%;
+    width: 100%;
     color: white;
 }

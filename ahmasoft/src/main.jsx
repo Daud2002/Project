@@ -6,6 +6,13 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import About from './Pages/About/About.jsx'
 import Home from './Pages/Home/Home.jsx'
 import Contact from './Pages/Contact/Contact.jsx'
+import Ourteampage from './Pages/OurteamPage/Ourteampage.jsx'
+import Projects from './Pages/Projects/Projects.jsx'
+import PageDetail from './Components/Fixcomponents/PageDetail/PageDetail.jsx'
+import ProjectDetails from './Pages/Projects/ProjectDetails.jsx'
+import DataScrapping from './Pages/Services/DataScrapping/DataScrapping.jsx'
+import Dataautomation from './Pages/Services/Data Automation/Dataautomation.jsx'
+import Datavisualization from './Pages/Services/Data Visualization/Datavisualization.jsx'
 
 
 
@@ -25,6 +32,30 @@ const router = createBrowserRouter([
       {
         path : '/contact',
         element : <Contact />
+      },
+      {
+        path : '/team',
+        element : <Ourteampage />
+      },
+      {
+        path : '/projects',
+        element : <Projects />
+      },
+      {
+        path : '/projects/:id',
+        element : <ProjectDetails />
+      },
+      {
+        path : '/datascrapping',
+        element : <DataScrapping />
+      },
+      {
+        path : '/dataautomation',
+        element : <Dataautomation />
+      },
+      {
+        path : '/datavisualization',
+        element : <Datavisualization />
       }
     ]
   }

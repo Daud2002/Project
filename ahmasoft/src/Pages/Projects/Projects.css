@@ -1,0 +1,29 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(41, 171, 226, 0.7) 50%, rgba(44,135,137,0.7) 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.image-container:hover::before {
+    opacity: 1;
+}
+.image-container:hover .linkicon{
+    display: block;
+}

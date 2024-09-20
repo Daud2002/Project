@@ -9,12 +9,12 @@ import person3 from '../../../assets/Images/aboutpage-person-3.png'
 
 export default function ClientTestimonial() {
   return (
-    <div className='h-[100vh] bg-[#f6eeff] flex flex-row relative'>
+    <div className='h-[100vh] bg-[#f6eeff] flex flex-row'>
 
 
       <div className='w-[40%]'>
-        <h5>--Client Testimonials</h5>
-        <h1>Check What They’re Talking About</h1>
+        <h5 className='text-primary'>--Client Testimonials</h5>
+        <h1 className='font-bold text-[2rem]'>Check What They’re Talking About</h1>
         <div>
           <img src="" alt="" />
           <div>
@@ -26,11 +26,11 @@ export default function ClientTestimonial() {
       </div>
 
 
-      <div className='w-[40%]'>
+      <div className='w-[40%] relative'>
       <img src={aboutbg} alt="" className='absolute top-0 right-0'/>
-      <img src={person1} alt="" className='absolute top-0 right-0'/>
-      <img src={person2} alt="" className='absolute top-0 right-0'/>
-      <img src={person3} alt="" className='absolute top-0 right-0'/>
+      <img src={person1} alt="" className='absolute bottom-5 right-0'/>
+      <img src={person2} alt="" className='absolute top-10 right-10 z-10'/>
+      <img src={person3} alt="" className='absolute top-20 right-20 z-0'/>
       </div>
     </div>
   )
