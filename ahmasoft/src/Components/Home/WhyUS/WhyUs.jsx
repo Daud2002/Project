@@ -1,35 +1,47 @@
 import React from 'react'
 import whyusimg from '../../../assets/Images/whyus.jpeg'
 import { FaArrowRight } from "react-icons/fa6";
+import { motion } from 'framer-motion';
+import { whyus_services } from '../../../assets/Data/Data';
+import { GiCheckMark } from "react-icons/gi";
+
 
 export default function WhyUs() {
     return (
-        <div className='md:mt-96 md:mb-32 mb-8'>
+        <div className='my-16'>
             <div className='flex md:flex-row flex-col md:gap-0 gap-6'>
-                <div className='md:w-[50%] px-4 flex justify-center'>
-                    <img src={whyusimg} alt="Why Us" className='w-[30rem] rounded-md' />
-                </div>
-                <div className='md:w-[45%] w-full px-4'>
-                    <h5 className='text-primary'>-- Company benefits</h5>
-                    <h1 className='font-bold text-[2rem]'>Why you Should choose Our Services</h1>
-                    <p className='my-4'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                <motion.div className='md:w-[50%] flex justify-center px-6'
+                    initial={{ x: -200 }}
+                    whileInView={{ x: 0 }}
+                    transition={{ duration: 1 }}
+                >
+                    <img src={whyusimg} alt="Why Us" className='rounded-xl' />
+                </motion.div>
+
+                <motion.div className='md:w-[45%] w-full px-4'
+                    initial={{ y: 200 }}
+                    whileInView={{ y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    <h5 className='text-primary flex flex-row items-center gap-4'><hr className='w-6 h-[0.2rem] rounded-3xl bg-primary outline-none'/> Why Us</h5>
+                    <h1 className='font-bold xl:text-[2.2rem] sm:text-[1.5rem]'>Why You Should Choose Our Services</h1>
+                    {/* <p className='my-4'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p> */}
                     <div className='flex flex-col gap-4 mt-4'>
-                        <div className='flex flex-row items-center gap-8'>
-                            <FaArrowRight className='border-[2px] border-primary text-primary rounded-[50%] p-4 box-content' />
-                            <div>
-                                <h1 className='font-bold'>Donec Quis felis Commodo</h1>
-                                <p>Lorem ipsum is simply free text dolor sit amet, consectetur notted.</p>
-                            </div>
-                        </div>
-                        <div className='flex flex-row items-center gap-8'>
-                            <FaArrowRight className='border-[2px] border-primary text-primary rounded-[50%] p-4 box-content' />
-                            <div>
-                                <h1 className='font-bold'>Donec Quis felis Commodo</h1>
-                                <p>Lorem ipsum is simply free text dolor sit amet, consectetur notted.</p>
-                            </div>
-                        </div>
+                        {
+                            whyus_services.map((items, i) => {
+                                return (
+                                    <div className='flex flex-row items-center gap-8 text-justify' key={i}>
+                                        <GiCheckMark className='text-primary flex-shrink-0 text-xl' />
+                                        <div>
+                                            <h1 className='font-bold xl:text-[1.2rem]'>{items.title}</h1>
+                                            <p className='text-[0.8rem] font-light'>{items.detail}</p>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )

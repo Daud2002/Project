@@ -1,17 +1,22 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './Components/Fixcomponents/Navbar/Navbar.jsx'
-import Footer from './Components/Fixcomponents/Footer/Footer.jsx'
 import { Outlet } from 'react-router-dom'
+import { Suspense, lazy } from 'react'
+const Navbar = lazy(() => import('./Components/Fixcomponents/Navbar/Navbar.jsx'))
+const Footer =lazy(()=>import('./Components/Fixcomponents/Footer/Footer.jsx'))
 
 function App() {
 
   return (
     <>
       <div className='flex flex-col'>
-        <Navbar />
+        <Suspense>
+          <Navbar />
+        </Suspense>
         <Outlet />
-        <Footer />
+        <Suspense>
+          <Footer />
+        </Suspense>
       </div>
     </>
   )

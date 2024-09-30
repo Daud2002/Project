@@ -1,0 +1,36 @@
+/* .bg-img{
+    background-image: url(../../../assets/Images/landing-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+/* .landingright{
+    background: url(../../../assets/Images/landbordercolor.png);
+    background-repeat: no-repeat;
+} */
+header{
+    font-family: "Playwrite DE Grund", cursive;
+    font-weight: bolder;
+}
+.landingbgright {
+    position: relative; /* Ensure child elements are positioned relative to this container */
+}
+
+.landingbgright::before {
+    position: absolute;
+    top: 0;
+    right: -7rem;
+    content: '';
+    background: url(../../../assets/Images/landbordercolor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%;
+    z-index: -1;
+}
+
+

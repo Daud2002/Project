@@ -10,7 +10,7 @@ export default function Noofprojects() {
 
     return (
         <ScrollTrigger onEnter={()=>setcounterOn(true)} onExit={()=>setcounterOn(false)}>
-        <div className='flex flex-row justify-around my-20'>
+        <div className='flex md:flex-row flex-col gap-16 md:gap-0 justify-around my-20'>
             <div className='flex flex-col items-center'>
                 <div className='relative'>
                     {counterOn && <CountUp start={0} end={30} duration={2} delay={0} className='text-[3.5rem] font-bold italic' />}<span className='absolute top-0 -right-6 font-bold text-[2rem] text-primary'>+</span>

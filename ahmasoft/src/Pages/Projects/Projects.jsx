@@ -5,6 +5,9 @@ import { IoMdLink } from "react-icons/io";
 import './Projects.css'
 import ProjectDetails from './ProjectDetails';
 import { useNavigate } from 'react-router-dom';
+import Projectbar from '../../Components/ProjectComponent/Projectbar/Projectbar';
+import automation from '../../assets/Images/automation.jpeg'
+import Projectlandingcomponent from '../../Components/ProjectLandingComponent/Projectlandingcomponent';
 
 
 export default function Projects() {
@@ -17,10 +20,11 @@ export default function Projects() {
 
 
   return (
-    <div>
-      <PageDetail name={'Projects'} />
-      <div className='flex flex-row justify-around'>
-        {
+    <div className='relative'>
+      <PageDetail name={'Projects'} quote={'Success Stories & Innovative Projects'} />
+      <Projectlandingcomponent />
+      <Projectbar />
+      {/* {
           projects.map((items, i) => {
             return (
               <div className='image-container cursor-pointer' onClick={() => onClickHandler(items.id)} key={items.id}>
@@ -31,7 +35,11 @@ export default function Projects() {
               </div>
             )
           })
-        }
+        } */}
+      <div className='flex justify-center my-16'>
+        <div className='project_quote text-white font-semibold text-[1rem] md:text-[1.5rem] flex justify-center text-center px-3 py-16 rounded-2xl w-[90%]'>
+          Transforming Client Visions Into Engaging Digital Experiences
+        </div>
       </div>
     </div>
   )

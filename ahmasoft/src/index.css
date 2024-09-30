@@ -11,3 +11,16 @@
 p{
     color: #a8a7a7;
 }
+/* Scrollbar styles for WebKit browsers (Chrome, Safari) */
+*::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #29abe2;
+    border-radius: 4px;
+}
+a:hover{
+color: #29abe2;
+}

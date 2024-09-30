@@ -9,11 +9,13 @@ import OurTeam from '../../Components/AboutComponent/OurTeam/OurTeam.jsx'
 export default function About() {
   return (
     <div>
-      <PageDetail name={'About'}/>
+      <PageDetail name={'About'} quote = {'Learn About Our Expertise and Vision'}/>
       <Aboutourcompany />
       <Noofprojects />
       <ClientTestimonial />
-      <BestSolutions />
+      <div className='my-12'>
+      <BestSolutions/>
+      </div>
       <OurTeam />
     </div>
   )

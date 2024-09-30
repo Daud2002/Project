@@ -27,3 +27,13 @@
 .image-container:hover .linkicon{
     display: block;
 }
+.detail_container{
+    scrollbar-color: #29abe2 #37304e ;
+    scrollbar-width:thin;
+}
+
+.project_quote{
+    background: url(../../assets/Images/best-sol-&-service.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

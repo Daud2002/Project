@@ -1,7 +1,7 @@
-.bg-img{
+.bg-img-landing{
     background-image: url(../../../assets/Images/technology-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 90%;
     color: white;
 }

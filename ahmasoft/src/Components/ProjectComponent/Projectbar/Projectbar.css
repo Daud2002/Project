@@ -1,0 +1,11 @@
+.activebar{
+    color: white;
+    background-color: #0096d6;
+    border-radius: 2rem;
+    padding: 4px 8px;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.scrollbar::-webkit-scrollbar{
+    display: none;
+}

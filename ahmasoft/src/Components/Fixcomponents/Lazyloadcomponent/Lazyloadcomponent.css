@@ -1,0 +1,65 @@
+.lazyload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Space between bars */
+}
+
+.lazyload span {
+    display: inline-block;
+    width: 5px;    /* Width of each bar */
+    height: 30px;  /* Default height */
+    background-color: #333; /* Color of the bars */
+    animation: load 1s infinite ease-in-out;
+}
+
+.lazyload span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.lazyload span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.lazyload span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.lazyload span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.lazyload span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+@keyframes load {
+    0% {
+        transform: scaleY(1); /* Normal height */
+    }
+    50% {
+        transform: scaleY(2.5); /* Expand height */
+    }
+    100% {
+        transform: scaleY(1); /* Return to normal height */
+    }
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 60px;
+    aspect-ratio: 2;
+    --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+    background: 
+      var(--_g) 0%   50%,
+      var(--_g) 50%  50%,
+      var(--_g) 100% 50%;
+    background-size: calc(100%/3) 50%;
+    animation: l3 1s infinite linear;
+  }
+  @keyframes l3 {
+      20%{background-position:0%   0%, 50%  50%,100%  50%}
+      40%{background-position:0% 100%, 50%   0%,100%  50%}
+      60%{background-position:0%  50%, 50% 100%,100%   0%}
+      80%{background-position:0%  50%, 50%  50%,100% 100%}
+  }
