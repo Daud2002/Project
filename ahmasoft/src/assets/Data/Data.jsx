@@ -197,26 +197,50 @@ const projects = [
     {
         id: 1,
         title: 'Data Scrapping',
-        tag: 'scraping',
+        tag: 'Scraping',
         img: scraping,
         heading: 'Overcoming anti-scraping challenges to ensure success',
-        para: "In a recent web scraping project, I successfully extracted product details and pricingfrom various e-commerce websites to provide valuable marketinsights. Using Python,Selenium, and BeautifulSoup, I developed a robust solution tohandle dynamic content and navigate CAPTCHA protections. The project delivered cleaned and structured data in CSVand JSON formats, addressing key challenges such as missingdata, duplicates, and format consistency. The client praised the efficiency and accuracy ofthe solution,highlighting its impact on their decision-making process by offering crucial insightsinto market trends and competitor pricing. This project not onlydemonstrated my ability to manage complex data extraction tasks but also provided actionable information thatsupported the client's business growth"
+        para: "In a recent web scraping project, I successfully extracted product details and pricingfrom various e-commerce websites to provide valuable marketinsights. Using Python,Selenium, and BeautifulSoup, I developed a robust solution tohandle dynamic content and navigate CAPTCHA protections. The project delivered cleaned and structured data in CSVand JSON formats, addressing key challenges such as missingdata, duplicates, and format consistency. The client praised the efficiency and accuracy ofthe solution,highlighting its impact on their decision-making process by offering crucial insightsinto market trends and competitor pricing. This project not onlydemonstrated my ability to manage complex data extraction tasks but also provided actionable information thatsupported the client's business growth",
+        technologies : [
+            "🦊 BeautifulSoup",
+            "🌐 Selenium",
+            "🕸 Scrapy",
+            "⚡ Playwright"
+          ]          
     },
     {
         id: 2,
         title: 'Automation',
-        tag: 'automation',
+        tag: 'Automation',
         img: automation,
         heading: 'Automation is the Key to Scaling Your Data Processes',
-        para: "I developed a Python-based data automation solution to streamline a client's operations by automating data extraction, processing, and integration from multiple sources. Using tools like Selenium for dynamic content scraping and Pandas for data cleaning, the solution improved accuracy, reduced manual tasks, and delivered real-time insights. This increased the client’s operational efficiency by 40%, enabling faster decision-making. The project resolved issues with inconsistent data formats and optimized data flow, allowing the client to focus on strategic growth rather than manual processes."
+        para: "I developed a Python-based data automation solution to streamline a client's operations by automating data extraction, processing, and integration from multiple sources. Using tools like Selenium for dynamic content scraping and Pandas for data cleaning, the solution improved accuracy, reduced manual tasks, and delivered real-time insights. This increased the client’s operational efficiency by 40%, enabling faster decision-making. The project resolved issues with inconsistent data formats and optimized data flow, allowing the client to focus on strategic growth rather than manual processes.",
+        technologies : [
+            "🐍 Python",
+            "🦊 BeautifulSoup",
+            "🌐 Selenium",
+            "🕸 Scrapy",
+            "📱 Appium"
+          ]
+          
     },
     {
         id: 3,
         title: 'Data Visualzation',
-        tag: 'visualization',
+        tag: 'Visualization',
         img: visualization,
         heading: 'Power of Web Scraping for Business Growth',
-        para: "I developed a Python-based data automation solution to streamline a client's operations by automating data extraction, processing,and integration from multiple sources.Using tools like Selenium for dynamic content scraping and Pandas for data cleaning, thesolution improved accuracy, reduced manual tasks, and delivered real- time insights.This increased the client’s operational efficiency by 40 %, enabling faster decision - making.The project resolved issues with inconsistent data formats and optimized data flow, allowing the client to focus on strategic growth rather than manual processes"
+        para: "I developed a Python-based data automation solution to streamline a client's operations by automating data extraction, processing,and integration from multiple sources.Using tools like Selenium for dynamic content scraping and Pandas for data cleaning, thesolution improved accuracy, reduced manual tasks, and delivered real- time insights.This increased the client’s operational efficiency by 40 %, enabling faster decision - making.The project resolved issues with inconsistent data formats and optimized data flow, allowing the client to focus on strategic growth rather than manual processes",
+        technologies : [
+            "📈 Power BI",
+            "📉 Tableau",
+            "🌐 Looker Studio",
+            "📑 Excel",
+            "🐍 Python",
+            "📊 Matplotlib",
+            "📈 Seaborn"
+          ]
+          
     }
 ];
 
@@ -239,7 +263,7 @@ const whyus_services = [
     }
 ];
 
-const project_bar = ['scraping', 'automation', 'visualization']
+const project_bar = ['Scraping', 'Automation', 'Visualization']
 
 const testimonial = [
     {

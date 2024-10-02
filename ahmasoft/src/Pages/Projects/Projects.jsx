@@ -4,7 +4,6 @@ import { projects } from '../../assets/Data/Data'
 import { IoMdLink } from "react-icons/io";
 import './Projects.css'
 import ProjectDetails from './ProjectDetails';
-import { useNavigate } from 'react-router-dom';
 import Projectbar from '../../Components/ProjectComponent/Projectbar/Projectbar';
 import automation from '../../assets/Images/automation.jpeg'
 import Projectlandingcomponent from '../../Components/ProjectLandingComponent/Projectlandingcomponent';
@@ -12,11 +11,7 @@ import Projectlandingcomponent from '../../Components/ProjectLandingComponent/Pr
 
 export default function Projects() {
 
-  const navigate = useNavigate();
 
-  function onClickHandler(id) {
-    navigate(`/projects/${id}`);
-  }
 
 
   return (

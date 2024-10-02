@@ -20,7 +20,7 @@ export default function PageDetail({ name, page, quote }) {
                 <div className='invisible'>hi</div>
                 <div className='flex flex-col items-center'>
                     <h1 className='font-semibold text-white text-[2.5rem]'>{name}</h1>
-                    <p className='flex gap-2 text-center md:text-[#a8a7a7] text-white'><span>{page}</span><span>{quote}</span></p>
+                    <p className='flex gap-5 text-center md:text-[#a8a7a7] text-white'><span>{page}</span><span>{quote}</span></p>
                 </div>
                 <div className='invisible'>
                    HI 

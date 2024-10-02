@@ -14,7 +14,8 @@ useEffect(()=>{
 
 
     return (
-        <div className='flex justify-center mb-16'>
+        <div className='flex flex-col items-center my-16 gap-16'>
+            <h1 className='font-bold text-[2rem]'>Frequently Asked Questions ( FAQs )</h1>
             <div className='w-[80%] flex flex-col gap-8'>
                 {
                     faqs.map((data, i) => {

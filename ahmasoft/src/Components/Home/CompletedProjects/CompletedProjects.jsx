@@ -82,7 +82,7 @@ export default function CompletedProjects() {
           {completed_projects.map((item, i) => (
             <div
               key={i}
-              className="flex flex-col justify-center items-center text-center gap-3 p-4 outline-none"
+              className="flex flex-col justify-center items-center text-center gap-3 md:p-4 outline-none"
             >
               <img
                 src={item.img}

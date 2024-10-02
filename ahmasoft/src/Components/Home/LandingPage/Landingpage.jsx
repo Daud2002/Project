@@ -18,7 +18,7 @@ export default function Landingpage() {
                     <div className='flex flex-col gap-6 sm:w-[50%] w-full justify-center sm:items-start items-center pl-8'>
                         <header className='text-primary font-semibold 2xl:text-[3rem] lg:text-[2rem] md:text-[1.5rem]'>Welcome to Ahmasoft</header>
                         <h1 className='flex flex-col sm:items-start items-center font-semibold 2xl:text-[5rem] xl:text-[4rem] lg:text-[2.5rem] md:text-[1.5rem] text-[1.3rem] my-4 text-[#686868]'>
-                            <span className=' opacity-65'>Your Trust</span>
+                            <span className=' opacity-65'>Your Trust,</span>
                             <span className=' opacity-65'>Our Responsibility</span>
                         </h1>
                         <NavLink to={'/contact'} className='border-[2px] border-primary py-3 text-primary font-bold hover:bg-primary hover:text-white rounded duration-200 backdrop-blur-sm px-4'>Book Free Consultation</NavLink>

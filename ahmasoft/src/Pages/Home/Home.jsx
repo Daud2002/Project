@@ -19,8 +19,6 @@ export default function Home() {
                 <CompletedProjects />
                 <WhyUs />
                 <Ouroffering />
-                <Bestsol />
-                <TrustedSolution />
                 <FAQs />
             </Suspense>
         </div>

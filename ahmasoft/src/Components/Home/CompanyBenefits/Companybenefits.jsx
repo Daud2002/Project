@@ -13,14 +13,14 @@ export default function Companybenefits() {
   return (
     <div className='flex lg:flex-row items-center flex-col lg:gap-10 gap-16 my-16 lg:h-[100vh] h-auto'>
       <motion.div 
-        className='relative lg:w-[50%] w-[80%] flex justify-center items-center'
+        className='relative lg:w-[50%] w-full flex justify-center items-center px-4'
         initial={{ x: -100 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
         <img src={bgimage} alt="" className='absolute -left-64 -z-20 2xl:w-[60rem] md:w-[35rem]' />
-        <img src={person1} alt="" className='lg:absolute 2xl:w-[50rem] 2xl:h-[35rem] lg:w-[35rem] w-full h-[20rem] left-5 z-10 rounded-2xl' />
+        <img src={person1} alt="" className='lg:absolute 2xl:w-[50rem] 2xl:h-[35rem] lg:w-[35rem] lg:h-[25rem] md:w-full md:h-[30rem] w-full h-[20rem] left-5 z-10 rounded-2xl' />
       </motion.div>
 
 

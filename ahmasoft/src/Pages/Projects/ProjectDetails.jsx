@@ -9,18 +9,27 @@ export default function ProjectDetails() {
     const project = projects.find(p => p.id === parseInt(id));
 
     return (
-        <div className='mb-24'>
-            <PageDetail name={'Project Details'} page={'Project'} />
-            <div>
-                <div className='w-[50%] flex justify-center'>
-                    <img src={project.img} alt={project.description} className='w-[30rem] rounded-md' />
+        <div className='mb-24 flex flex-col gap-16'>
+            <PageDetail name={'Project Details'} page={`Project/${project.tag}`} />
+            <div className='flex flex-col items-center gap-12'>
+                <div className='flex flex-col items-center gap-10 w-[90%]'>
+                    <img src={project.img} alt={project.description} className='rounded-md max-w-[50rem] max-h-[30rem]' />
                 </div>
-                <div className='w-[50%] flex flex-col pr-12 gap-8'>
-                    <div className='flex flex-col gap-4'>
-                        <h1 className='font-bold text-[1.5rem] text-justify'>{project.heading}</h1>
-                        <h3 className=' text-[#868585]'>{project.description}</h3>
+                <div className='flex flex-row  pr-12 gap-8 w-[90%]'>
+                    <div className='flex flex-col gap-2 w-[80%]'>
+                    <h1 className='font-bold text-[2rem] text-primary'>{project.heading}</h1>
+                        <p className='text-justify'>{project.para}</p>
                     </div>
-                    <p className='text-justify'>{project.para}</p>
+                    <div className='w-[20%]'>
+                        <h1 className='text-primary font-bold mb-6 text-[1.5rem]'>Tools</h1>
+                        <ul className='flex flex-col gap-4'>
+                            {project.technologies.map((technologies,index)=>{
+                                return(
+                                    <li key={index}>{technologies}</li>
+                                )
+                            })}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
