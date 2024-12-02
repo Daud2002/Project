@@ -6,8 +6,6 @@ const Companybenefits = lazy(()=>import('../../Components/Home/CompanyBenefits/C
 const CompletedProjects = lazy(()=>import( '../../Components/Home/CompletedProjects/CompletedProjects.jsx'))
 const WhyUs = lazy(()=>import('../../Components/Home/WhyUS/WhyUs.jsx'))
 const Ouroffering =lazy(()=>import('../../Components/Home/Ouroffering/Ouroffering.jsx'))
-const Bestsol =lazy(()=>import('../../Components/Home/Bestsol/Bestsol.jsx'))
-const TrustedSolution = lazy (()=>import('../../Components/Home/TrustedSolution/TrustedSolution.jsx'))
 
 
 export default function Home() {

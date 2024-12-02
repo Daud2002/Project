@@ -10,11 +10,11 @@ export default function ProjectDetails() {
 
     return (
         <div className='mb-24 flex flex-col gap-16'>
-            <PageDetail name={'Project Details'} page={`Project/${project.tag}`} />
+            <PageDetail name={'Project Details'} page={`Project/${project.tag}`} /> 
             <div className='flex flex-col items-center gap-12'>
-                <div className='flex flex-col items-center gap-10 w-[90%]'>
+                {/* <div className='flex flex-col items-center gap-10 w-[90%]'>
                     <img src={project.img} alt={project.description} className='rounded-md max-w-[50rem] max-h-[30rem]' />
-                </div>
+                </div> */}
                 <div className='flex flex-row  pr-12 gap-8 w-[90%]'>
                     <div className='flex flex-col gap-2 w-[80%]'>
                     <h1 className='font-bold text-[2rem] text-primary'>{project.heading}</h1>

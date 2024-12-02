@@ -1,0 +1,19 @@
+.link_icons{
+    position: relative;
+    color: white;
+}
+.link_icons::before {
+    content: '';
+    background-color: rgb(112, 237, 251);
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    z-index: -10;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+.custom_shadow{
+    box-shadow: 0px 0px 10px 0px #c3c3c3;
+}

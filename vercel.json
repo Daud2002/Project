@@ -1,0 +1,37 @@
+{
+    "version": 2,
+    "routes": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        },
+        {
+            "source": "/about",
+            "destination": "/About.jsx"
+        },
+        {
+            "source": "/services",
+            "destination": "/Services.jsx"
+        },
+        {
+            "source": "/datascraping",
+            "destination": "/DataScraping.jsx"
+        },
+        {
+            "source": "/automation",
+            "destination": "/DataAutomation.jsx"
+        },
+        {
+            "source": "/projects",
+            "destination": "/Projects.jsx"
+        },
+        {
+            "source": "/projects/:id",
+            "destination": "/projects/[id]"
+        },
+        {
+            "source": "/datavisualization",
+            "destination": "/DataVisualization.jsx"
+        }
+    ]
+}

@@ -1,33 +1,37 @@
 import React from 'react'
-import whyusright from '../../../assets/Images/whychooseus.jpeg'
+import './Whyourservice.css'
 import signature from '../../../assets/Images/signature.png'
-import { whyourservices } from '../../../assets/Data/Data'
+import { serviesfirstappearancedata } from '../../../assets/Data/Data'
 
-export default function Whyourservice({page}) {
+export default function Whyourservice({ page }) {
 
-    const whyusdata = whyourservices.filter(data => data.tag === page);
-
-
-
+  const whyusdata = serviesfirstappearancedata.filter(data => data.tag === page);
 
   return (
-  
-    <div className='scrap_bg flex lg:flex-row flex-col items-center py-8 px-3 m-8 rounded-3xl text-center'>
-    <div className=' text-white md:p-6 p-2 lg:w-[50%] w-full'>
-      <h3 className='text-white flex flex-row justify-center md:justify-start items-center gap-2'><hr className='w-4 h-0.5 bg-white rounded-lg' />{whyusdata[0].title}</h3>
-      <h1 className='md:text-[2.5rem] text-[1.5rem] font-bold md:text-left text-center'>Why you Should Choose Our Services</h1>
-      <div className='flex lg:flex-row flex-col items-start justify-between my-8'>
-        <p className='text-[#ededed] text-justify lg:w-[50%] w-full text-[0.8rem] '>{whyusdata[0].description}
-          <img src={signature} alt="" className='text-white' />
-        </p>
-        <div className='flex flex-col gap-2 items-start'>
-          {whyusdata[0].serviceDetails.map((offerings, i) => { return (<li className='text-[#ededed] text-[0.8rem]' key={i}>{offerings}</li>) })}
+
+    <div className='startedbg flex lg:flex-row flex-col justify-between lg:items-center items-start p-3 m-8 rounded-3xl h-full'>
+      <div className=' text-white md:p-6 p-2 lg:w-[50%] w-full'>
+        <h3 className='text-white flex flex-row justify-center md:justify-start items-center gap-2'><hr className='w-4 h-0.5 bg-white rounded-lg' />{whyusdata[0].title}</h3>
+        <h1 className='md:text-[2.5rem] text-[1.5rem] font-bold md:text-left text-center'>Why you Should Choose Our Services</h1>
+        <div className='flex lg:flex-row flex-col items-start justify-between my-8'>
+          <p className='text-[#ededed] lg:text-justify text-start lg:w-[50%] w-full text-[0.8rem] '>{whyusdata[0].whyusdes}
+            <img src={signature} alt="" className='text-white lg:block hidden' />
+          </p>
         </div>
       </div>
+      <div className='flex lg:justify-center justify-start gap-2 lg:w-[50%] w-full'>
+        <ol className='flex flex-col items-start justify-start gap-5'>
+          {whyusdata[0].whychooseus.map((offerings, i) => {
+            return (
+              <div className='text-[#ededed] flex flex-col' key={i}>
+                <div className='font-medium text-left text-[1.1rem]'>{offerings.heading}</div>
+                <div className='font-light text-[#dddddd]'>{offerings.detail}</div>
+              </div>
+            )
+          })}
+        </ol>
+      </div>
+      <img src={signature} alt="" className='text-white lg:hidden block' />
     </div>
-    <div className='lg:w-[50%] w-full px-12'>
-      <img src={whyusright} alt="" className='rounded-xl hidden lg:block' />
-    </div>
-  </div>
   )
 }

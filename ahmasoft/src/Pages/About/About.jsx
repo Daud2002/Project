@@ -4,7 +4,8 @@ import Aboutourcompany from '../../Components/AboutComponent/Aboutourcompany/Abo
 import ClientTestimonial from '../../Components/AboutComponent/ClientTestimonial/ClientTestimonial.jsx'
 import Noofprojects from '../../Components/AboutComponent/Noofprojects/Noofprojects.jsx'
 import BestSolutions from '../../Components/Home/Bestsol/Bestsol.jsx'
-import OurTeam from '../../Components/AboutComponent/OurTeam/OurTeam.jsx'
+import Ceodetails from '../../Components/AboutComponent/OurTeam/Ceodetails.jsx'
+import Contactcomponent from '../../Components/ContactComponent/Contactcomponent.jsx'
 
 export default function About() {
   return (
@@ -12,11 +13,12 @@ export default function About() {
       <PageDetail name={'About'} quote = {'Learn About Our Expertise and Vision'}/>
       <Aboutourcompany />
       <Noofprojects />
-      <ClientTestimonial />
       <div className='my-12'>
       <BestSolutions/>
       </div>
-      <OurTeam />
+      <Ceodetails />
+      <ClientTestimonial />
+      <Contactcomponent />
     </div>
   )
 }

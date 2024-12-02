@@ -15,7 +15,7 @@ export default function WhyUs() {
                     whileInView={{ x: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    <img src={whyusimg} alt="Why Us" className='rounded-xl' />
+                    <img src={whyusimg} alt="Why Us" className='rounded-xl 2xl:w-[40rem]' />
                 </motion.div>
 
                 <motion.div className='md:w-[45%] w-full px-4'

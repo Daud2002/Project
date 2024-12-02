@@ -1,9 +1,11 @@
 import React from 'react';
-import { completed_projects } from '../../../assets/Data/Data';
+import { projects } from '../../../assets/Data/Data';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import './CompletedProjects.css'
+import { useNavigate } from 'react-router-dom';
+import { FaArrowUp } from "react-icons/fa";
 
 // Custom Arrow components
 const NextArrow = (props) => {
@@ -37,6 +39,7 @@ const PrevArrow = (props) => {
 };
 
 export default function CompletedProjects() {
+
   var settings = {
     dots: true,
     infinite: true,
@@ -66,6 +69,12 @@ export default function CompletedProjects() {
     ],
   };
 
+  const navigate = useNavigate();
+  
+  function onClickHandler(id) {
+    navigate(`/projects/${id}`);
+  }
+
   return (
     <div className="mt-20 flex flex-col items-center">
       <div className="bg-[#1d1729] flex flex-col gap-3 items-center justify-center py-14 rounded-2xl mx-6 w-[95%]">
@@ -79,17 +88,11 @@ export default function CompletedProjects() {
       </div>
       <div className="flex flex-col my-16 w-[90%]">
         <Slider {...settings}>
-          {completed_projects.map((item, i) => (
-            <div
-              key={i}
-              className="flex flex-col justify-center items-center text-center gap-3 md:p-4 outline-none"
-            >
-              <img
-                src={item.img}
-                alt={`Completed project ${item.title}`}
-                className="rounded-lg w-full h-[50vh]"
-              />
-              <h1 className="font-bold text-[1.1rem]">{item.title}</h1>
+          {projects.filter(projects => projects.completed === true).map((items, i) => (
+            <div key={i} className='border-[1.5px] border-[#d0d0d0] p-8 rounded-lg cursor-default hover:border-primary duration-300 hover:scale-100 scale-95'>
+              <h1 className='text-[1.2rem] font-medium'>{items.heading}</h1>
+              <p className='mt-2'>{items.title}</p>
+              <button  className='border-[1.5px] border-[#d0d0d0] rounded-md p-3 mt-8 flex flex-row gap-5 items-center hover:bg-primary hover:text-white hover:border-none group' onClick={() => onClickHandler(items.id)}><span>Explore Project</span> <FaArrowUp className=' group-hover:rotate-90 duration-300' /></button>
             </div>
           ))}
         </Slider>

@@ -3,47 +3,46 @@ import { projects } from '../../../assets/Data/Data'
 import './ProjectDetails.css'
 import Projectinnerdetail from '../Projectinnerdetail/Projectinnerdetail';
 import { useNavigate } from 'react-router-dom';
+import { GrLinkNext } from "react-icons/gr";
+import { FaArrowUp } from "react-icons/fa";
+
+
 
 export default function ProjectDetails({ filter }) {
 
     let filtered = projects.filter(p => p.tag === filter);
-    const [detailstatus, setdetailstatus] = useState();
-    const [dataid,setdataid] = useState();
+
 
     const navigate = useNavigate();
 
     function onClickHandler(id) {
       navigate(`/projects/${id}`);
-      setdetailstatus(true);
-      setdataid(id);
     }
 
     return (
         <>
-            <div>
+            <div className='mt-20'>
                 {
                     filter === 'All' ?
-                        <div className='grid lg:grid-cols-3 grid-cols-1'>
+                        <div className='grid lg:grid-cols-2 grid-cols-1 gap-10 mx-[3rem]'>
                             {projects.map((items, i) => {
                                 return (
-                                    <div className='flex flex-col md:p-8 p-3' key={i}>
-                                        <div className='overflow-hidden container-img rounded-xl relative text-center w-full flex justify-center group cursor-pointer' onClick={()=>onClickHandler(items.id)}>
-                                            <img src={items.img} alt="" className='w-full box-border group-hover:scale-125 hover:rounded-xl rounded-xl duration-700' />
-                                            <h1 className='bg-primary w-[80%] text-white font-semibold px-8 absolute bottom-0 py-3 z-10 rounded-xl opacity-0 group-hover:opacity-100 group-hover:bottom-4 duration-200'>{items.title}</h1>
-                                        </div>
+                                    <div key={i} className='border-[1.5px] border-[#d0d0d0] p-8 rounded-lg cursor-default boxesshadow hover:border-primary duration-300 hover:scale-105'>
+                                       <h1 className='text-[1.2rem] font-medium'>{items.heading}</h1>
+                                       <p className='mt-2'>{items.title}</p>
+                                       <button className='border-[1.5px] border-[#d0d0d0] rounded-md p-3 mt-8 flex flex-row gap-5 items-center hover:bg-primary hover:text-white hover:border-none group' onClick={()=>onClickHandler(items.id)}><span>Explore Project</span> <FaArrowUp className=' group-hover:rotate-90 duration-300'/></button>
                                     </div>
                                 )
                             })}
                         </div>
                         :
-                        <div className='grid lg:grid-cols-3 grid-cols-1'>{
+                        <div className='grid lg:grid-cols-2 grid-cols-1 mx-[3rem]'>{
                             filtered.map((items, i) => {
                                 return (
-                                    <div className='flex flex-col md:p-8 p-3' key={i}>
-                                        <div className='overflow-hidden container-img rounded-xl relative text-center flex justify-center items-center w-full group cursor-pointer' onClick={()=>onClickHandler(items.id)}>
-                                            <img src={items.img} alt="" className='w-full box-border group-hover:scale-125 hover:rounded-xl rounded-xl duration-700' />
-                                            <h1 className='bg-primary w-[80%] text-white font-semibold px-8 absolute bottom-0 py-3 z-10 rounded-xl opacity-0 group-hover:opacity-100 group-hover:bottom-4 duration-200'>{items.title}</h1>
-                                        </div>
+                                    <div key={i} className='border-[1.5px] border-[#d0d0d0] p-8 rounded-lg cursor-default boxesshadow hover:border-primary duration-300 hover:scale-105'>
+                                       <h1 className='text-[1.2rem] font-medium'>{items.heading}</h1>
+                                       <p className='mt-2'>{items.title}</p>
+                                       <button className='border-[1.5px] border-[#d0d0d0] rounded-md p-3 mt-8 flex flex-row gap-5 items-center hover:bg-primary hover:text-white hover:border-none group' onClick={()=>onClickHandler(items.id)}><span>Explore Project</span> <FaArrowUp className=' group-hover:rotate-90 duration-300'/></button>
                                     </div>
                                 )
                             })

@@ -15,7 +15,7 @@ export default function Landingpage() {
         <div className='block'>
             <div className='relative'>
                 <div className='flex flex-row justify-between w-full text-primary h-[90vh]'>
-                    <div className='flex flex-col gap-6 sm:w-[50%] w-full justify-center sm:items-start items-center pl-8'>
+                    <div className='flex flex-col gap-6 sm:w-[50%] w-full justify-center sm:items-start items-center md:pl-8'>
                         <header className='text-primary font-semibold 2xl:text-[3rem] lg:text-[2rem] md:text-[1.5rem]'>Welcome to Ahmasoft</header>
                         <h1 className='flex flex-col sm:items-start items-center font-semibold 2xl:text-[5rem] xl:text-[4rem] lg:text-[2.5rem] md:text-[1.5rem] text-[1.3rem] my-4 text-[#686868]'>
                             <span className=' opacity-65'>Your Trust,</span>
@@ -26,19 +26,19 @@ export default function Landingpage() {
                     <div className='relative xl:w-[20%] lg:w-[25%] md:w-[30%] sm:w-[40%]'>
                         <div className='flex flex-col justify-center landingbgright h-full'>
                         <div className='absolute 2xl:right-16 xl:right-10 lg:right-7 md:right-4 sm:right-6 flex flex-col justify-center sm:gap-6 lg:gap-10 xl:gap-12 2xl:gap-20'>
-                            <a href="https://www.linkedin.com/in/ehmadshayan">
+                            <a href="https://www.linkedin.com/company/ahmasoft" target='_blank'>
                                 <FaLinkedin className='2xl:w-16 2xl:h-16 xl:w-10 xl:h-10 sm:w-8 sm:h-8 text-white z-10 rounded hover:scale-110 duration-300' />
                             </a>
 
-                            <a href="https://www.youtube.com/watch?v=ba3yg2egZF4">
+                            <a href="/" target='_blank'>
                                 <FaYoutube className='2xl:w-16 2xl:h-16 xl:w-10 xl:h-10 sm:w-8 sm:h-8 text-white z-10 rounded hover:scale-110 duration-300' />
                             </a>
 
-                            <a href="https://www.facebook.com/A.shayaan/">
+                            <a href="https://www.facebook.com/people/Ahmasoft/61567032779943/" target='_blank'>
                                 <FaSquareFacebook className='2xl:w-16 2xl:h-16 xl:w-10 xl:h-10 sm:w-8 sm:h-8 text-white z-10 rounded hover:scale-110 duration-300' />
                             </a>
 
-                            <a href="https://www.instagram.com/ahmadshayan.official/">
+                            <a href="/" target='_blank'>
                                 <FaInstagram className='2xl:w-16 2xl:h-16 xl:w-10 xl:h-10 sm:w-8 sm:h-8 text-white z-10 rounded hover:scale-110 duration-300' />
                             </a>
                         </div>
@@ -57,10 +57,10 @@ export default function Landingpage() {
                             key={i}
                         >
                             <h1 className='flex justify-between items-center'>
-                                <span className='font-bold text-[6vw] md:text-[2vw]'>{items.name}</span>
+                                <span className='font-bold text-[2rem]'>{items.name}</span>
                                 <span className='text-[#bebdbd] text-[4vw] md:text-[1.5vw]'>{`0${i + 1}`}</span>
                             </h1>
-                            <p className='text-justify xl:text-[1.2rem] text-[0.8rem]'>{items.detail}</p>
+                            <p className='text-justify text-[1.2rem]'>{items.detail}</p>
                             <p className='absolute bg-[#29abe2] w-6 h-6 top-0 right-0 block rounded-tr-xl rounded-bl-xl'></p>
                         </div>
                     ))}

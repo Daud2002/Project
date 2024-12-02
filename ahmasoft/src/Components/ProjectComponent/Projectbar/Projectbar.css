@@ -1,7 +1,7 @@
 .activebar{
     color: white;
     background-color: #0096d6;
-    border-radius: 2rem;
+    border-radius: 5px;
     padding: 4px 8px;
     transform: scale(1.1);
     transition-duration: 0.5s;

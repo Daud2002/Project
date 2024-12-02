@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { lazy, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
@@ -6,9 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import About from './Pages/About/About.jsx'
 import Home from './Pages/Home/Home.jsx'
 import Contact from './Pages/Contact/Contact.jsx'
-import Ourteampage from './Pages/OurteamPage/Ourteampage.jsx'
 import Projects from './Pages/Projects/Projects.jsx'
-import ProjectDetails from './Pages/Projects/ProjectDetails.jsx'
+import ProjectDetails from './Pages/Projects/ProjectDetails.jsx';
 import DataScrapping from './Pages/Services/DataScrapping/DataScrapping.jsx'
 import Dataautomation from './Pages/Services/Data Automation/Dataautomation.jsx'
 import Datavisualization from './Pages/Services/Data Visualization/Datavisualization.jsx'
@@ -35,10 +34,6 @@ const router = createBrowserRouter([
         element: <Contact />
       },
       {
-        path: '/team',
-        element: <Ourteampage />
-      },
-      {
         path: '/projects',
         element: <Projects />
       },
@@ -47,11 +42,15 @@ const router = createBrowserRouter([
         element: <ProjectDetails />
       },
       {
-        path: '/datascrapping',
+        path: '/:id',
+        element: <ProjectDetails />
+      },
+      {
+        path: '/datascraping',
         element: <DataScrapping />
       },
       {
-        path: '/dataautomation',
+        path: '/automation',
         element: <Dataautomation />
       },
       {

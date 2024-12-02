@@ -9,10 +9,10 @@ import { Link } from 'react-router-dom'
 
 export default function Companybenefits() {
 
-  
+
   return (
     <div className='flex lg:flex-row items-center flex-col lg:gap-10 gap-16 my-16 lg:h-[100vh] h-auto'>
-      <motion.div 
+      <motion.div
         className='relative lg:w-[50%] w-full flex justify-center items-center px-4'
         initial={{ x: -100 }}
         whileInView={{ x: 0 }}
@@ -30,9 +30,9 @@ export default function Companybenefits() {
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
       >
-        <h5 className='text-primary flex flex-row items-center gap-2 2xl:text-[1.5rem] xl:text-[1.2rem] text-[1rem]'><hr className='w-6 h-0.5 bg-primary'/> Comapny Benefits</h5>
+        <h5 className='text-primary flex flex-row items-center gap-2 2xl:text-[1.5rem] xl:text-[1.2rem] text-[1rem]'><hr className='w-6 h-0.5 bg-primary' /> Comapny Benefits</h5>
         <div className='flex flex-col gap-6'>
-          <h1 className='2xl:text-[3.5rem] xl:text-[2.5rem] lg:text-[2rem] md:text-[1.8rem] font-bold lg:text-left'>The Best Data Solutions for Your Business</h1>
+          <h1 className='2xl:text-[3.5rem] xl:text-[2.5rem] lg:text-[2rem] md:text-[1.8rem] text-[1.5rem] font-bold lg:text-left'>The Best Data Solutions for Your Business</h1>
           <p className='lg:text-justify text-center md:text-[0.8rem]'>Ahmasoft specializes in transforming raw data into actionable insights through advanced data scraping and visualization techniques. Our automation solutions further enhance efficiency by streamlining repetitive tasks, allowing your business to focus on growth and innovation.</p>
           <div className='flex flex-col gap-8'>
             <div className='flex md rounded lg:flex-row flex-col items-center gap-8'>

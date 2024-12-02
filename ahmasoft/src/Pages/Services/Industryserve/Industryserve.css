@@ -1,0 +1,9 @@
+.industrybg{
+    background: url(../../../assets/Images/industry-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.shadow_box{
+    box-shadow: 0 4px 8px 0 #d0d0d0;
+}

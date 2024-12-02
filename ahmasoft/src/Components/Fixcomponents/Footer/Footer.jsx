@@ -3,12 +3,11 @@ import './Footer.css'
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
-import { CiLocationArrow1 } from "react-icons/ci";
 import { FaTwitter } from "react-icons/fa";
 import { GrFacebookOption } from "react-icons/gr";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-import { nav_items } from '../../../assets/Data/Data';
+import { footer_nav, nav_items } from '../../../assets/Data/Data';
 import logo from '../../../assets/Images/logo.png'
 import { NavLink } from 'react-router-dom';
 
@@ -24,11 +23,11 @@ export default function Footer() {
           <p className='text-justify text-[0.9rem]'>We thrive on transforming data into opportunities, pushing boundaries in data solutions and automation.</p>
           <div className='flex flex-row gap-4'>
             {/* <div className='flex gap-4'> */}
-              <a href=""><FaLinkedinIn className='border-[1px] p-4 box-content rounded-[20%] h-4 w-4 bg-[#15101e] text-white hover:scale-110 duration-150 hover:bg-primary' /></a>
+              <a href="https://www.linkedin.com/company/ahmasoft" target='_blank'><FaLinkedinIn className='border-[1px] p-4 box-content rounded-[20%] h-4 w-4 bg-[#15101e] text-white hover:scale-110 duration-150 hover:bg-primary' /></a>
               <a href=""><FaTwitter className='border-[1px] p-4 box-content rounded-[20%] h-4 w-4 bg-[#15101e] text-white hover:scale-110 duration-150 hover:bg-primary' /></a>
             {/* </div> */}
             {/* <div className='flex gap-4'> */}
-              <a href=""><GrFacebookOption className='border-[1px] p-4 box-content rounded-[20%] h-4 w-4 bg-[#15101e] text-white hover:scale-110 duration-150 hover:bg-primary' /></a>
+              <a href="https://www.facebook.com/people/Ahmasoft/61567032779943/" target='_blank'><GrFacebookOption className='border-[1px] p-4 box-content rounded-[20%] h-4 w-4 bg-[#15101e] text-white hover:scale-110 duration-150 hover:bg-primary' /></a>
               <a href=""><FaInstagram className='border-[1px] p-4 box-content rounded-[20%] h-4 w-4 bg-[#15101e] text-white hover:scale-110 duration-150 hover:bg-primary' /></a>
             {/* </div> */}
           </div>
@@ -40,7 +39,7 @@ export default function Footer() {
           </h3>
           <ul className='flex flex-col gap-2'>
             {
-              nav_items.map((items, i) => {
+              footer_nav.map((items, i) => {
                 return (
                   <NavLink to={items.link} className='hover:text-primary text-[0.9rem] text-[#a8a7a7]' key={i}>
                     {items.name}
@@ -74,7 +73,7 @@ export default function Footer() {
 
             <div className='flex flex-row items-center gap-4'>
               <MdEmail className='w-6 h-6 text-primary' />
-              <a className='text-[15px] text-[#a8a7a7]' href='mailto:expertshayan@gmail.com'>expertshayan@gmail.com</a>
+              <a className='text-[15px] text-[#a8a7a7]' href='mailto:expertshayan@gmail.com'>ahmasoft.official@gmail.com</a>
             </div>
 
             <div className='flex flex-row items-center gap-4'>

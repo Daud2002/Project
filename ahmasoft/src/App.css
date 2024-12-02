@@ -1,0 +1,12 @@
+.faqborder{
+    box-shadow: 0px 0px 10px 0px #dddddd;
+}
+.startedbg{
+    background: linear-gradient(90deg, #2c8789 0%, #29abe2 100%);
+}
+.boxesshadow{
+    box-shadow: 0 4px 8px 0 #d0d0d0;
+}
+.navshadow{
+    box-shadow: 5px 5px 5px #d0d0d0;
+}
